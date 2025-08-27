@@ -21,3 +21,4 @@ public class TestEstadistica {
         scanner.close();
     }
 }
+//1.9 2.5 3.7 2 1 6 3 4 5 2

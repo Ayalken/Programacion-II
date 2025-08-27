@@ -1,40 +1,37 @@
-// Source code is decompiled from a .class file using FernFlower decompiler.
 package Practica1;
 
 public class EcuacionLineal {
-   private double a;
-   private double b;
-   private double c;
-   private double d;
-   private double e;
-   private double f;
+    private double a;
+    private double b;
+    private double c;
+    private double d;
+    private double e;
+    private double f;
 
-   public EcuacionLineal(double var1, double var3, double var5, double var7, double var9, double var11) {
-      this.a = var1;
-      this.b = var3;
-      this.c = var5;
-      this.d = var7;
-      this.e = var9;
-      this.f = var11;
-   }
+    public EcuacionLineal(double a, double b, double c, double d, double e, double f) {
+        this.a = a;
+        this.b = b;
+        this.c = c;
+        this.d = d;
+        this.e = e;
+        this.f = f;
+    }
 
-   public boolean tieneSolucion() {
-      return this.a * this.d - this.b * this.c != 0.0;
-   }
+    public boolean tieneSolucion() {
+        return (a * d - b * c) != 0;
+    }
 
-   public double getX() {
-      if (!this.tieneSolucion()) {
-         throw new ArithmeticException("El sistema no tiene solución única.");
-      } else {
-         return (this.e * this.d - this.b * this.f) / (this.a * this.d - this.b * this.c);
-      }
-   }
+    public double getX() {
+        if (!tieneSolucion()) {
+            throw new ArithmeticException("El sistema no tiene solución única.");
+        }
+        return (e * d - b * f) / (a * d - b * c);
+    }
 
-   public double getY() {
-      if (!this.tieneSolucion()) {
-         throw new ArithmeticException("El sistema no tiene solución única.");
-      } else {
-         return (this.a * this.f - this.e * this.c) / (this.a * this.d - this.b * this.c);
-      }
-   }
+    public double getY() {
+        if (!tieneSolucion()) {
+            throw new ArithmeticException("El sistema no tiene solución única.");
+        }
+        return (a * f - e * c) / (a * d - b * c);
+    }
 }

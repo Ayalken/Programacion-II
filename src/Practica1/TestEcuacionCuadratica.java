@@ -27,3 +27,8 @@ public class TestEcuacionCuadratica {
         sc.close();
     }
 }
+
+
+//      1.0 3 1
+//      1 2.0 1
+//      1 2 3
