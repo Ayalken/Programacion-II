@@ -1,0 +1,63 @@
+1. carpetas y codigo en vs code
+2. luego se pone publicar en Github 
+        🔹 Qué hace “Publicar en GitHub”
+Inicializa Git en tu proyecto (si no estaba hecho).
+Crea un repositorio remoto en tu GitHub (si seleccionaste esa opción).
+Crea la rama principal (main) y hace un primer commit con tus archivos locales.
+Sube (push) tu código al repositorio remoto automáticamente.
+3. veriffica 
+        git remote -v
+        //!Aparece
+        origin  https://github.com/TuUsuario/TuRepo.git (fetch)
+        origin  https://github.com/TuUsuario/TuRepo.git (push)
+        git branch
+        //deve salir la rama sea main o master
+        git branch * main
+        //cambia la rama si esta en master a main
+4- git remote -v origin 
+        https://github.com/Ayalken/Programacion-II (fetch) 
+        //lo dirijo al github que creo publicar
+        origin https://github.com/Ayalken/Programacion-II (push)
+        //se dirigio al github
+
+
+
+
+        AGREGAR CAMBIOS!!! SI CMODIFICAS EL Programacion
+
+git add .       Esto prepara todos los archivos modificados para el commit.
+git commit -m "Actualizar index.html"       Cualquier mensaje no cambia nada.
+git push origin main        Después de esto, tu cambio estará reflejado en GitHub.
+
+        TODO DE UNA
+
+git add .
+git commit -m "Actualizar index.html"
+git rm --cached .gitignore
+git push origin main
+
+para que no se vea archicos especales sea bin comandos o el gitigmore
+
+1.    .gitignore
+bin/
+comandos.note
+
+2.
+git rm -r --cached bin      -r hace que no se vea una carpeta
+git rm --cached comandos.note       haceque no se vea un package
+
+git rm -r --cached bin
+git rm --cached comandos.note
+
+            INICIA EL GITINORE 
+3.
+git add .gitignore
+git commit -m "Dejar de rastrear bin y comandos.note"
+git push origin main
+
+# Elimina .gitignore del repositorio pero lo deja en tu PC
+git rm --cached .gitignore
+
+git commit -m "Mantener .gitignore local pero no en el repo"
+git push origin main
+
