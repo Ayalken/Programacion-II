@@ -1,0 +1,15 @@
+{
+    "java.project.sourcePaths": [
+        "src"
+    ],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [],
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": ".*\\.java$",
+                "cmd": "javac -d bin -cp bin ${workspaceFolder}/src/**/*.java"
+            }
+        ]
+    }
+}

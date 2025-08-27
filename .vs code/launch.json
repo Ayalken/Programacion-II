@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Ejecutar TestEcuacion",
+            "request": "launch",
+            "mainClass": "Practica1.TestEcuacion",
+            "projectName": "Programacion_II"
+        },
+        {
+            "type": "java",
+            "name": "Ejecutar TestEcuacion2",
+            "request": "launch",
+            "mainClass": "Practica1.TestEcuacion2",
+            "projectName": "Programacion_II"
+        },
+        {
+            "type": "java",
+            "name": "Ejecutar TestEstadistica",
+            "request": "launch",
+            "mainClass": "Practica1.TestEstadistica",
+            "projectName": "Programacion_II"
+        }
+    ]
+}
