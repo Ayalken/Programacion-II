@@ -6,21 +6,21 @@
             "name": "Ejecutar TestEcuacion",
             "request": "launch",
             "mainClass": "Practica1.TestEcuacion",
-            "projectName": "Programacion_II"
+            "projectName": "Programacion-II"
         },
         {
             "type": "java",
             "name": "Ejecutar TestEcuacion2",
             "request": "launch",
-            "mainClass": "Practica1.TestEcuacion2",
-            "projectName": "Programacion_II"
+            "mainClass": "Practica1.TestEcuacionCuadratica",
+            "projectName": "Programacion-II"
         },
         {
             "type": "java",
             "name": "Ejecutar TestEstadistica",
             "request": "launch",
             "mainClass": "Practica1.TestEstadistica",
-            "projectName": "Programacion_II"
+            "projectName": "Programacion-II"
         }
     ]
 }
