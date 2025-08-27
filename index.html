@@ -1,29 +1,121 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <title>Programacion II – Portada</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <title>Programación II – Portada</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; max-width: 720px; margin: 3rem auto; line-height: 1.6; }
-    h1 { margin-bottom: .25rem; }
-    .card { border: 1px solid #ddd; border-radius: 12px; padding: 1.25rem; }
-    a { text-decoration: none; }
+    /* Reset básico */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      line-height: 1.6;
+    }
+
+    h1 {
+      margin-bottom: 0.5rem;
+      font-size: 2.5rem;
+      color: #2c3e50;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      color: #34495e;
+    }
+
+    .card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    a {
+      color: #3498db;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: #1d6fa5;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    li {
+      flex: 1 1 200px;
+    }
+
+    .btn {
+      display: block;
+      text-align: center;
+      padding: 0.75rem 1rem;
+      background-color: #3498db;
+      color: #fff;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: #1d6fa5;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      ul {
+        flex-direction: column;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>Programacion_II</h1>
-  <p class="card">
-    <strong>Nombre completo:</strong> Aylin Shirley Aliaga Kea<br>
-    <strong>Mi GitHub:</strong> <a href="https://github.com/Ayalken/Programacion-II" target="_blank" rel="noopener">https://github.com/Ayalken/Programacion-II</a>
-  </p>
+  <h1>Programación II</h1>
+
+  <div class="card">
+    <p><strong>Nombre completo:</strong> Aylin Shirley Aliaga Kea</p>
+    <p><strong>Mi GitHub:</strong> 
+      <a href="https://github.com/Ayalken/Programacion-II" target="_blank" rel="noopener">
+        github.com/Ayalken/Programacion-II
+      </a>
+    </p>
+  </div>
 
   <h2>Prácticas</h2>
   <ul>
-    <li><a href="src/Practica1">Práctica1</a></li>
-    <li><a href="src/Practica2/">Práctica2</a></li>
-    <li><a href="src/Practica3/">Práctica3</a></li>
-
+    <li><a href="src/Practica1" class="btn">Práctica 1</a></li>
+    <li><a href="src/Practica2/" class="btn">Práctica 2</a></li>
+    <li><a href="src/Practica3/" class="btn">Práctica 3</a></li>
   </ul>
 </body>
 </html>
