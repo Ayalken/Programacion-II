@@ -50,8 +50,6 @@ class AlgebraVectorial:
             ((self.a[0]*self.b[0]+self.a[1]*self.b[1])/(math.hypot(self.b[0],self.b[1])))
         )
         
-        
-        
 a=(1,2)
 b=(2,-1)
 vectorN= AlgebraVectorial(a,b)
